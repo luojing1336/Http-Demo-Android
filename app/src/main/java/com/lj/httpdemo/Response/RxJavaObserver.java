@@ -25,10 +25,10 @@ public class RxJavaObserver implements Observer<String> {
     private int type;
     private Context context;
 
-    public RxJavaObserver(HttpRequestCallback callback, int type, Context context) {
-        this.callback = callback;
-        this.type = type;
+    public RxJavaObserver(Context context, int type, HttpRequestCallback callback) {
         this.context = context;
+        this.type = type;
+        this.callback = callback;
     }
 
     @Override

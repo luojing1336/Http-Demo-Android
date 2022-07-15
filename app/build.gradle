@@ -37,13 +37,22 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //OkHttp
-    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
-    implementation 'com.squareup.okio:okio:1.9.0'
+    //OkHttp BOM with version
+    implementation 'com.squareup.okhttp3:okhttp-bom:3.12.1'
+    //OKHttp Interceptor without version
+    implementation 'com.squareup.okhttp3:logging-interceptor'
+    //OKHttp Interceptor without version
+    implementation 'com.squareup.okhttp3:okhttp'
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //Retrofit添加GSON解析返回数据
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //Retrofit添加RxJava支持
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
     //RxJava
     implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     //Gson
     implementation 'com.google.code.gson:gson:2.9.0'
     //Blankj
